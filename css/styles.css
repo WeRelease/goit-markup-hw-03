@@ -14,6 +14,7 @@
   --studio-second-color: #000000;
   --bg-color: #2f303a;
   --bg-second-color: #f5f4fa;
+  --half-margin: 30px;
 }
 
 body {
@@ -233,16 +234,18 @@ img {
 .works-list {
   display: flex;
   margin-top: 50px;
-  margin-left: calc(-1 * var(--half-margin));
+  /* margin-left: calc(-1 * var(--half-margin)); */
 }
 
 .works-items {
-  flex-basis: calc(100% / 3 - var(--half-margin));
-  margin-left: var(--half-margin);
+  /* flex-basis: calc(100% / 3 - var(--half-margin)); */
+  /* margin-left: var(--half-margin); */
+  margin-right: 30px;
 }
 .works-items > img {
-  width: 100%;
-  height: auto;
+  /* width: 100%;
+  height: auto; */
+}
 /*                ========WORKS END========               */
 /*                ========GANG START========                */
 .gang {
