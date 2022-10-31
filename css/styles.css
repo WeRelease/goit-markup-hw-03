@@ -52,11 +52,35 @@ img {
   display: block;
 }
 
-/*                ===========Reset End======== */
-
-/*                ========HEADER START======== */
 .bg-color {
   background: var(--bg-color);
+}
+/*                ===========Reset End======== */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
+/*                ========HEADER START======== */
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.header-wrap {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  margin-right: 93px;
 }
 .header-logo,
 .footer-logo {
@@ -71,6 +95,20 @@ img {
   color: var(--studio-second-color);
 }
 
+.header-navigation {
+  display: flex;
+  margin-right: auto;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item:not(:first-child),
+.contact-item:not(:first-child) {
+  margin-left: 50px;
+}
+
 .header-link,
 .footer-link {
   font-weight: 500;
@@ -79,8 +117,15 @@ img {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
+
 [aria-current] {
   color: var(--accent-color);
+}
+
+.h-items {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-contact {
@@ -97,8 +142,15 @@ img {
 /*                ===========HERO START========               */
 .hero {
   background: var(--bg-color);
+  padding: 200px 0px;
+  text-align: center;
 }
 .title {
+  width: 696px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -108,15 +160,19 @@ img {
   color: var(--primary-white-color);
 }
 .btn {
+  padding: 10px 32px;
+
   font-family: "Roboto";
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
   color: var(--primary-white-color);
   background: var(--btn-blue-color);
-  border-radius: 4px;
-  cursor: pointer;
 }
 .btn:focus,
 .btn:hover {
@@ -125,10 +181,25 @@ img {
 /*                ========HERO END========               */
 
 /*                ========SKILLS START========              */
+.container {
+}
 .hiden-title {
+  margin-bottom: 94px;
   display: none;
 }
+.skills-list {
+  display: flex;
+  justify-content: center;
+  margin-left: calc(-1 * var(--half-margin));
+}
+
+.skills-items {
+  flex-basis: calc(100% / 4 - var(--half-margin));
+  margin-left: var(--half-margin);
+}
 .skills-sub-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
