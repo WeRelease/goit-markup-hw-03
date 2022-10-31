@@ -141,9 +141,10 @@ img {
 
 /*                ===========HERO START========               */
 .hero {
-  background: var(--bg-color);
   padding: 200px 0px;
   text-align: center;
+
+  background: var(--bg-color);
 }
 .title {
   width: 696px;
@@ -181,10 +182,12 @@ img {
 /*                ========HERO END========               */
 
 /*                ========SKILLS START========              */
+.skills {
+  margin-top: 94px;
+}
 .container {
 }
 .hiden-title {
-  margin-bottom: 94px;
   display: none;
 }
 .skills-list {
@@ -215,15 +218,31 @@ img {
 }
 /*                ========SKILLS END========              */
 /*                ========WORKS START========               */
+.works {
+  margin-top: 94px;
+}
 .works-title {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
+
   color: var(--primary-text-color);
 }
+.works-list {
+  display: flex;
+  margin-top: 50px;
+  margin-left: calc(-1 * var(--half-margin));
+}
 
+.works-items {
+  flex-basis: calc(100% / 3 - var(--half-margin));
+  margin-left: var(--half-margin);
+}
+.works-items > img {
+  width: 100%;
+  height: auto;
 /*                ========WORKS END========               */
 /*                ========GANG START========                */
 .gang {
