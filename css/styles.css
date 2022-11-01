@@ -22,10 +22,6 @@ body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
 }
-/* .page {
-  background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
-} */
 
 /*                ===========Reset Start======== */
 h1,
@@ -183,8 +179,6 @@ section {
 
 /*                ========SKILLS START========              */
 
-.container {
-}
 .hiden-title {
   display: none;
 }
@@ -238,7 +232,6 @@ section {
 .works-items {
   flex-basis: calc(100% / 3 - var(--half-margin));
   margin-left: var(--half-margin);
-  /* margin-right: 30px; */
 }
 .works-items > img {
   width: 100%;
@@ -340,9 +333,17 @@ address {
 /*                ========PORTFOLIO START========            */
 .list-btn {
   display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.item-btn:not(:first-child) {
+  margin-left: 8px;
 }
 
 .btn-pf {
+  min-width: 73px;
+  padding: 6px 22px;
+
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
@@ -368,10 +369,26 @@ address {
   background: #2196f3;
   border-radius: 4px;
 } */
-/*                ========Second UL========            */
+/*                ========Gallery UL========            */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--half-margin));
+  margin-right: calc(-1 * var(--half-margin));
+}
 
 .features-items {
+  flex-basis: calc(100% / 3 - var(--half-margin));
+  margin-top: var(--half-margin);
+  margin-right: var(--half-margin);
+
   background: var(--primary-white-color);
+}
+.portfolio-inside {
+  padding: 20px 24px;
+
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 .features-subtitle {
   font-weight: 700;
@@ -386,6 +403,10 @@ address {
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+.card {
+  min-width: 320px;
+  height: auto;
 }
 
 /*                ========PORTFOLIO END========            */
