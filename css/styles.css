@@ -62,7 +62,7 @@ section {
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
-  margin: auto;
+  margin: 0 auto;
   /* outline: 2px solid red;
   outline-offset: -2px; */
 }
@@ -139,8 +139,6 @@ section {
 .hero {
   padding: 200px 0px;
   text-align: center;
-
-  background: var(--bg-color);
 }
 .title {
   width: 696px;
@@ -338,6 +336,7 @@ address {
 }
 .item-btn:not(:first-child) {
   margin-left: 8px;
+  margin-bottom: 50px;
 }
 
 .btn-pf {
@@ -370,7 +369,7 @@ address {
   border-radius: 4px;
 } */
 /*                ========Gallery UL========            */
-.features {
+.list-features {
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--half-margin));
@@ -381,8 +380,6 @@ address {
   flex-basis: calc(100% / 3 - var(--half-margin));
   margin-top: var(--half-margin);
   margin-right: var(--half-margin);
-
-  background: var(--primary-white-color);
 }
 .portfolio-inside {
   padding: 20px 24px;
