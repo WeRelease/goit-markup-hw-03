@@ -185,6 +185,16 @@ section {
   justify-content: center;
   margin-left: calc(-1 * var(--half-margin));
 }
+.skills-items::before {
+  display: block;
+  content: "";
+  height: 120px;
+  width: 270px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--bg-second-color);
+}
 
 .skills-items {
   flex-basis: calc(100% / 4 - var(--half-margin));
@@ -363,11 +373,6 @@ address {
   border-radius: 4px;
 }
 
-/* [aria-current] {
-  color: var(--primary-white-color);
-  background: #2196f3;
-  border-radius: 4px;
-} */
 /*                ========Gallery UL========            */
 .list-features {
   display: flex;
